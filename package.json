@@ -8,7 +8,20 @@
     "dev": "next dev",
     "start": "next start -p $PORT",
     "heroku-postbuild": "npm run build",
-    "test": "jest"
+    "test": "jest",
+    "lint:js": "eslint --ext=js --ext=jsx .",
+    "lint:css": "stylelint \"**/*.css\"",
+    "lint": "npm run lint:js && npm run lint:css"
+  },
+  "prettier": {
+    "singleQuote": true,
+    "trailingComma": "es5",
+    "printWidth": 120
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint"
+    }
   },
   "repository": "https://github.com/achaljain/TGA-Stage2.git",
   "author": "Achal Jain <achal.jain@publicissapient.com>",
@@ -22,6 +35,13 @@
     "@babel/core": "^7.9.0",
     "@testing-library/react": "^10.0.2",
     "babel-jest": "^25.3.0",
-    "jest": "^25.3.0"
+    "eslint-config-airbnb": "^18.1.0",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-react": "^7.19.0",
+    "husky": "^4.2.5",
+    "jest": "^25.3.0",
+    "prettier": "^2.0.4",
+    "stylelint": "^13.3.2",
+    "stylelint-config-standard": "^20.0.0"
   }
 }
