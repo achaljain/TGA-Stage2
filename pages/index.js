@@ -1,10 +1,9 @@
 import React from 'react';
-import './styles.css';
+import FeedView from '../src/components/Feedview';
 
 const HackerNews = () => (
   <div>
-    <h1>Hacker News</h1>
-    <p>WIP...</p>
+    <FeedView />
   </div>
 );
 
