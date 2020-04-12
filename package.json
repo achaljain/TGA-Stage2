@@ -6,7 +6,8 @@
   "scripts": {
     "build": "next build",
     "dev": "next dev",
-    "start": "next start -p 8080",
+    "start": "next start -p $PORT",
+    "heroku-postbuild": "npm run build",
     "test": "jest"
   },
   "repository": "https://github.com/achaljain/TGA-Stage2.git",
