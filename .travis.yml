@@ -1,0 +1,16 @@
+language: node_js
+node_js:
+  - "12"
+sudo: true
+ 
+branches:
+  only:
+  - master
+ 
+deploy:
+  # deploy app as api server
+  - provider: heroku
+    skip_cleanup: true
+    api-key:
+      secure: $HEROKU_API_KEY
+    app: hacker-news

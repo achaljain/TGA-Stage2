@@ -1,0 +1,19 @@
+{
+  "name": "hacker-news",
+  "version": "1.0.0",
+  "description": "Hacker news clone",
+  "main": "index.js",
+  "scripts": {
+    "build": "next build",
+    "dev": "next dev",
+    "start": "next start -p 8080"
+  },
+  "repository": "https://github.com/achaljain/TGA-Stage2.git",
+  "author": "Achal Jain <achal.jain@publicissapient.com>",
+  "license": "MIT",
+  "dependencies": {
+    "next": "^9.3.4",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  }
+}
