@@ -6,7 +6,8 @@
   "scripts": {
     "build": "next build",
     "dev": "next dev",
-    "start": "next start -p 8080"
+    "start": "next start -p 8080",
+    "test": "jest"
   },
   "repository": "https://github.com/achaljain/TGA-Stage2.git",
   "author": "Achal Jain <achal.jain@publicissapient.com>",
@@ -15,5 +16,11 @@
     "next": "^9.3.4",
     "react": "^16.13.1",
     "react-dom": "^16.13.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.9.0",
+    "@testing-library/react": "^10.0.2",
+    "babel-jest": "^25.3.0",
+    "jest": "^25.3.0"
   }
 }
